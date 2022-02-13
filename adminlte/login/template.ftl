@@ -15,6 +15,11 @@
     </#if>
     <title><#nested "title"></title>
     <link rel="shortcut icon" href="${url.resourcesPath}/img/favicon.ico" />
+    <style>
+    body {
+        background-image: url("${url.resourcesPath}/img/login_bg.png") !important;
+    }
+    </style>
     <#if properties.styles?has_content>
         <#list properties.styles?split(' ') as style>
             <link href="${url.resourcesPath}/${style}" rel="stylesheet" />
